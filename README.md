@@ -6,7 +6,7 @@
 * build image
 
 ```code
-docker-compose build
+docker-compose build smashing
 ```
 
 * Running demo

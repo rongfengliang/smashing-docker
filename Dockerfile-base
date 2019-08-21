@@ -1,0 +1,9 @@
+FROM ruby:2.6-stretch
+LABEL AUTHOR="dalongrong"
+LABEL EMAIL="1141591465@qq.com"
+WORKDIR /app
+RUN apt-get update \
+  && apt-get install -y nodejs \
+  && rm -rf /var/cache/apt/
+RUN gem sources --add https://gems.ruby-china.com/ --remove https://rubygems.org/ \
+   && gem  install smashing

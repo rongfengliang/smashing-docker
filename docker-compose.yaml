@@ -1,0 +1,13 @@
+version: "3"
+services: 
+    dash:
+      build: ./
+      ports: 
+      - "3030:3030"
+      image: dalongrong/smashing-demo
+    smashing:
+       build: 
+        context: ./
+        dockerfile: Dockerfile-base
+       image: dalongrong/smashing
+  
